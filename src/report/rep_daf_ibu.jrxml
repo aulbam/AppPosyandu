@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="80f2205a-29a8-4458-b1da-27d9d03efa66">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="183"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select * from pendaftaran_ibuhamil]]>
+	</queryString>
+	<field name="idibu" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_lengkap" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="usia" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="no_tlp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_suami" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jumlah_balita" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rt" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rw" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat_lengkap" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="63" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="19" width="555" height="25" uuid="1207bc9a-9bd1-46db-924e-c428d011123b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Colonna MT" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA IBU HAMIL]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="55" height="20" uuid="456a2ec4-680e-4343-9549-e77f569fcc0a"/>
+				<text><![CDATA[ID Ibu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="0" width="78" height="20" uuid="9b1f7732-8cba-4caa-99d5-fc51141df511"/>
+				<text><![CDATA[Nama Lengkap]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="133" y="0" width="58" height="20" uuid="88e31d25-9414-4feb-b973-0154c70b960b"/>
+				<text><![CDATA[Usia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="194" y="0" width="66" height="20" uuid="07da70f9-6357-4945-a93a-dec3a34d922e"/>
+				<text><![CDATA[Tanggal Lahir]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="273" y="0" width="80" height="20" uuid="586c6ce4-8ba9-4a2a-9445-a634c74ee312"/>
+				<text><![CDATA[No Telp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="363" y="0" width="56" height="20" uuid="b839181f-1495-41ea-a070-6ec8e4b2b4d2"/>
+				<text><![CDATA[Nama Suami]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="0" width="68" height="20" uuid="0baea3fb-6360-48b3-ba22-2663af2ba4cc"/>
+				<text><![CDATA[Jumlah anak]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="39" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="55" height="20" uuid="b0517e0a-5bfa-46a7-b127-7928cc2b46be"/>
+				<textFieldExpression><![CDATA[$F{idibu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="55" y="0" width="78" height="20" uuid="1843348b-f06d-4d72-9493-8bac95ea3642"/>
+				<textFieldExpression><![CDATA[$F{nama_lengkap}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="133" y="0" width="58" height="20" uuid="3f273334-bdaa-478f-8046-6f866ad57227"/>
+				<textFieldExpression><![CDATA[$F{usia}]]></textFieldExpression>
+			</textField>
+			<textField pattern="MM/dd/yyyy">
+				<reportElement x="194" y="0" width="66" height="20" uuid="2a9c46bf-d7ba-4953-a829-a780a1bc82e1"/>
+				<textFieldExpression><![CDATA[$F{tanggal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="273" y="0" width="80" height="20" uuid="ca301c4f-b1d6-4938-9437-87c0873a5c99"/>
+				<textFieldExpression><![CDATA[$F{no_tlp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="363" y="0" width="56" height="20" uuid="1d046ffc-762f-4286-979c-074254a27086"/>
+				<textFieldExpression><![CDATA[$F{nama_suami}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="0" width="68" height="20" uuid="794088fb-4d35-40c1-96c3-226defeb84e4"/>
+				<textFieldExpression><![CDATA[$F{jumlah_balita}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="29" width="555" height="1" uuid="2bbdb1a2-8d05-40ef-b70b-8859628876de"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="32" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="53" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="80" height="20" uuid="f186b68c-a2fa-4bf8-90c3-2da752c862f2"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="80" y="0" width="40" height="20" uuid="e1cc066b-9c7d-4516-abc6-86b952b05635"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="455" y="0" width="100" height="20" uuid="08dce8c9-0c88-44b6-a9df-e87fe39807fd"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
